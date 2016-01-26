@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<title>Evan P. Stone</title>
+		<link rel="stylesheet prefetch" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Main stylesheet /-->
+
+</head>
+
+<body>
+	<section id="screen1">
+		<div class="eps">Evan P. Stone</div>
+		<div class="fed">Front End Designer</div>
+		<nav>
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#portfolios">PORTFOLIOS</a></li>
+				<li><a href="mailto:stone.evan13@gmail.com?Subject=I liked your resume.">CONTACT</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+<div id="about" class="anchor"></div>	
+
+	<section id="screen2">
+		<div class="about">
+			<div class="col-xs-12">
+				<h3>About</h3><hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<img src="../images/stone400.png">
+				</div>
+				<div class="info col-xs-12 col-sm-8">
+					<p style="margin:40px 0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam </p>
+				</div>
+
+			</div>
+			<div class="resume">
+				<img src="../images/resume-thumb.png" style="float:right; width:20%">
+				<h3>Like What You See?</h3>
+				<p>Why not take a look at my resume > > ></div>
+			</div>
+	</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+
+</body>
+</html>

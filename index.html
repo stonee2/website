@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<title>Evan P. Stone</title>
+		<link rel="stylesheet prefetch" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Main stylesheet /-->
+
+</head>
+
+<body>
+	<section id="screen1">
+		<div class="eps">Evan P. Stone</div>
+		<div class="fed">Front End Designer</div>
+		<nav>
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#portfolios">PORTFOLIOS</a></li>
+				<li><a href="../evan.pdf">RESUME</a></li>
+				<li><a href="mailto:stone.evan13@gmail.com?Subject=I liked your resume.">CONTACT</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+<div id="about" class="anchor"></div>	
+
+	<section id="screen2">
+		<div class="about">
+			<div class="col-xs-12">
+				<h3>About</h3><hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<img src="images/stone400.png">
+				</div>
+				<div class="info col-xs-12 col-sm-8">
+					<p style="margin:40px 0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam </p>
+				</div>
+
+			</div>
+			<div class="resume">
+				<div class="row">
+					<div class="col-xs-12 col-sm-9">
+						<h3>Digital Technologist (Front End Design)</h3>
+						<p><sup>Anixter Inc. | January 2015 - Present</sup>
+						<ul>As a Digital Technologist, I:
+							<li>Provide Adobe Experience Manager (Adobe CQ) technical support to digital authors</li>
+							<li>Provide digital authors Adobe Experience Manager (Adobe CQ) training and continued education</li>
+							<li>Create and enforce Online and digital standards</li>
+							<li>Provide advanced design support with use of HTML and CSS language</li>
+							<li>Author and update content within Hybris for the eCommerce portion of the external website</li>
+							<li>Develop CQ components by analyzing , writing requirements and creating front end design</li>
+							<li>Support and maintain the hierarchy and structure of the external website</li>
+							<li>Design, code and maintain internal facing web pages and digital material utilizing HTML, CSS and Javascript</li>
+							<li>Participate in software development life cycle process by creating/executing user acceptance tests</li>
+							<li>Administer the Online chat tool, Oracle RightNOW, and provide end user support</li>
+							<li>Continued support many aspects of my previous Integrated Marketing Design and Development Specialist role</li>
+						</ul>
+						<h4>Like What You See? Why not take a look at my resume > > ></h4>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<a href="../evan.pdf"><img src="images/resume-thumb.png" style="float:right; width:100%"></a>
+				</div>
+			</div>
+	</section>
+
+<div id="portfolios" class="anchor"></div>
+	
+	<section id="screen3">
+    	<div class="content col-xs-12">
+           	<h3>Portfolios</h3><hr>
+        		<div id="weDesignb" class="full col-xs-12 col-md-4">
+          			<div class="slantedBox">WEB DESIGN</div>
+          			<img src="images/web.jpg" alt="Web Design"> 
+               	</div>
+        		<div id="graphicDesign" class="full col-xs-12 col-md-4">
+          			<div class="slantedBox">GRAPHIC DESIGN</div>
+          			<img src="images/graphics.jpg"  alt="Web Design"/> 
+                </div>
+        		<div id="photography" class="full col-xs-12 col-md-4">
+          			<div class="slantedBox">PHOTOGRAPHY</div>
+          			<img src="images/photos.jpg"  alt="Web Design"/> 
+                </div>
+      	</div>
+	</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+
+</body>
+</html>

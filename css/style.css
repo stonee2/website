@@ -1,0 +1,169 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+Description: Create a sticky navigation bar that remains fixed to the top after scroll
+Author: Stanislav Kostadinov
+Author URI: http://stanislav.it
+Version: 1.0.0 - 11.01.2014
+*/
+
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+a:active, a:hover {color:maroon;}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 70px; 
+	z-index: 99;
+}
+
+body {
+	color: #fff;
+	font-family: arial; 
+	font-size: 18px;
+	 background-color: black
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: black;
+	float:left;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+}
+nav li {
+	display: inline-block;
+	padding: 24px 30px;
+	font-size: 26px
+}
+nav li a {
+	color: lime;
+	text-transform: uppercase;
+}
+
+.resume ul, ol{
+		margin-left:10px;
+		font-size:12px;"
+}
+.resume li{
+		margin-left:15px;
+}
+.resume h3{margin-top:0;}
+.resume h4{color:lime;}
+section {
+	min-height: 100vh;
+}
+
+.resume {
+	margin:25px;
+	background-color: red;
+	padding:20px;
+	overflow: auto;
+}
+.info{
+	padding: 20px;
+}
+
+/* Screens Settings */
+#screen1 {	
+	background:url(../images/motorcycle.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.heading {
+	padding-top:20px; 
+	font-size:30px;
+}
+.about img{
+	width: 100%;
+	margin:0 auto;
+}
+
+.eps {
+	background-color: maroon;
+	padding: 8px 16px;
+	float:right;
+	z-index: 99;
+	position: absolute;
+	top:48px;
+	left:40px;
+	font-size:38px;
+}
+.anchor{
+	position: relative; top: -70px;
+}
+.fed {
+	background-color: black;
+	padding: 6px 12px;
+	float:right;
+	z-index: 99;
+	position: absolute;
+	transform: rotate(-10deg);
+	top:20px;
+	left:10px;
+}
+
+
+#screen2 {
+	background: maroon;
+	text-align: left;
+	margin-top:0;
+	padding:0 50px;
+}
+
+#screen3 {
+	background: black;
+	margin-top:0;
+	padding:0 50px;
+}
+
+.full img{
+  width:100%;
+  z-index: -13;
+  position: relative;
+}
+.full{
+  background-size: cover;
+  text-align: left;
+  z-index: 4;
+  padding: 10px;
+}
+.full p{ 
+  color: white; 
+  background-color: 
+  black;padding: 4px;
+  width:100%;
+}
+
+.slantedBox {
+  background-color: black;
+  transform:rotate(-6deg);
+  color:lime;
+  padding: 5px;
+  z-index: 13;
+  position: absolute;
+  font-size: 22px;
+  margin:2vw;
+}
+
+@media only screen and (max-width: 750px) {
+
+	nav li {
+		padding: 13px 8px;
+	}
+
+	nav li a {
+		font-size:3vw;
+	}
+
+}
